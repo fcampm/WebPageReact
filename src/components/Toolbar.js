@@ -2,6 +2,7 @@ import React from 'react';
 import { Toolbar } from '@material-ui/core';
 import { AppBar } from '@material-ui/core';
 import { Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 import { Menu, MenuItem } from '@material-ui/core';
 
 export default function ToolbarWebPage(props) {
@@ -19,8 +20,14 @@ export default function ToolbarWebPage(props) {
     return (
         <AppBar position="static">
             <Toolbar>
-                <Button color="inherit" variant="outlined">Inicio</Button>
-                <Button color="inherit">¿Quiénes Somos?</Button>
+                <Link to='/' style={{color: "white"}}>
+                    <Button color="inherit">
+                        Inicio
+                    </Button>
+                </Link>
+                <Link to="/quienes-somos" style={{color: "white"}}>
+                    <Button color="inherit">¿Quiénes Somos?</Button>
+                </Link>
                 <Button color="inherit" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                     Capacitaciones / Cursos
                 </Button>
@@ -31,11 +38,19 @@ export default function ToolbarWebPage(props) {
                     open={Boolean(anchorEl)}
                     onClose={handleClose}
                 >
-                    <MenuItem onClick={handleClose}>Discapacidad Auditiva</MenuItem>
-                    <MenuItem onClick={handleClose}>Discapacidad Visual</MenuItem>
+                    <Link to="/discapacidad-auditiva" style={{color:"black", textDecoration: 'none'}}>
+                        <MenuItem onClick={handleClose}>Discapacidad Auditiva</MenuItem>
+                    </Link>
+                    <Link to="/discapacidad-visual" style={{color:"black", textDecoration: 'none'}}>
+                        <MenuItem onClick={handleClose}>Discapacidad Visual</MenuItem>
+                    </Link>
                 </Menu>
-                <Button color="inherit">Noticias</Button>
-                <Button color="inherit">Contacto</Button>
+                <Link to="/noticias" style={{color:"white"}}>
+                    <Button color="inherit">Noticias</Button>
+                </Link>
+                <Link to="/contacto" style={{color:"white"}}>
+                    <Button color="inherit">Contacto</Button>
+                </Link>
             </Toolbar>
         </AppBar>
     );
