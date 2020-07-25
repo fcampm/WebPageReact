@@ -20,16 +20,16 @@ export default function ToolbarWebPage(props) {
     return (
         <AppBar position="static">
             <Toolbar>
-                <Link to='/' style={{color: "white"}}>
+                <Link to='/' style={{color: "white", textDecoration: 'none'}}>
                     <Button color="inherit">
                         Inicio
                     </Button>
                 </Link>
-                <Link to="/quienes-somos" style={{color: "white"}}>
+                <Link to="/quienes-somos" style={{color: "white", textDecoration: 'none'}}>
                     <Button color="inherit">¿Quiénes Somos?</Button>
                 </Link>
                 <Button color="inherit" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-                    Capacitaciones / Cursos
+                    Aprender
                 </Button>
                 <Menu
                     id="simple-menu"
@@ -45,10 +45,10 @@ export default function ToolbarWebPage(props) {
                         <MenuItem onClick={handleClose}>Discapacidad Visual</MenuItem>
                     </Link>
                 </Menu>
-                <Link to="/noticias" style={{color:"white"}}>
+                <Link to="/noticias" style={{color:"white", textDecoration: 'none'}}>
                     <Button color="inherit">Noticias</Button>
                 </Link>
-                <Link to="/contacto" style={{color:"white"}}>
+                <Link to="/contacto" style={{color:"white", textDecoration: 'none'}}>
                     <Button color="inherit">Contacto</Button>
                 </Link>
             </Toolbar>
