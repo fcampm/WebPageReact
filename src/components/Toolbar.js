@@ -4,6 +4,7 @@ import { AppBar } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { Menu, MenuItem } from '@material-ui/core';
+import Logo from '../images/logo.png';
 
 export default function ToolbarWebPage(props) {
 
@@ -20,6 +21,13 @@ export default function ToolbarWebPage(props) {
     return (
         <AppBar position="static">
             <Toolbar>
+                <Link to='/' style={{color: "white", textDecoration: 'none'}}>
+                    <img
+                        alt='Logo'
+                        src={Logo}
+                        width={120}
+                        />
+                </Link>
                 <Link to='/' style={{color: "white", textDecoration: 'none'}}>
                     <Button color="inherit">
                         Inicio
@@ -46,7 +54,7 @@ export default function ToolbarWebPage(props) {
                     </Link>
                 </Menu>
                 <Link to="/noticias" style={{color:"white", textDecoration: 'none'}}>
-                    <Button color="inherit">Noticias</Button>
+                    <Button color="inherit">Novedades</Button>
                 </Link>
                 <Link to="/contacto" style={{color:"white", textDecoration: 'none'}}>
                     <Button color="inherit">Contacto</Button>

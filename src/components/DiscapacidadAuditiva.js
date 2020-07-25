@@ -6,7 +6,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
-import Grid  from '@material-ui/core/Grid';
+import Grid from '@material-ui/core/Grid';
 import DiscapacidadAud from '../images/discapacidad_auditiva.jpg'
 import { Button } from '@material-ui/core';
 import ShareIcon from '@material-ui/icons/Share';
