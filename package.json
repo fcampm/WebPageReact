@@ -1,6 +1,7 @@
 {
   "name": "melisa-webpage",
   "version": "0.1.0",
+  "homepage": "http://fabshub.net",
   "private": true,
   "dependencies": {
     "@material-ui/core": "4.11.0",
