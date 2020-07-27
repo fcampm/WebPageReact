@@ -116,7 +116,7 @@ export default function QuienesSomosComponent() {
                         <br />
                         <br />
                         Debido a la precaria actitud y compromiso de todos, la inclusión se ve mermada. 
-                        Si no exite un cambio en la comunidad en la que vivimos y no se fomenta el aprendizaje colectivo, 
+                        Si no existe un cambio en la comunidad en la que vivimos y no se fomenta el aprendizaje colectivo, 
                         la inclusión no podrá ser incentivada.
                     </Typography>
                 </Grid>
