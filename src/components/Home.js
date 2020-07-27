@@ -59,7 +59,7 @@ const tutorialSteps = [
     quoteAuthor: 'Miros Gordillo'
   },
   {
-    label: '"Petenece: trabajando por un mundo incluyente y sin barreras de comunicación"',
+    label: '"Pertenecer: trabajando por un mundo incluyente y sin barreras de comunicación"',
     imgPath: StepperPhotoFive,
     labelBtn: 'Contáctanos',
     btnEmoji: <ContactSupportIcon fontSize='large'/>,

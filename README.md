@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Webpage Structure
+
+The webpage structure is the following one:
+
+![Image of the webpage structure](/src/images/WebpageStructure.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
