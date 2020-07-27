@@ -99,7 +99,7 @@ export default function QuienesSomosComponent() {
                         <br />
                         <br />
                         Aunado a nuestro compromiso y a la metodología estratégica, un valor agregado que ofrecemos 
-                        es que dentro la plataforma otorgaremos certificaciones por la inclusión de las escuelas.
+                        es que dentro de la plataforma otorgaremos certificaciones por la inclusión de las escuelas.
                     </Typography>
                 </Grid>
                 <Grid item xs='3' sm='1'></Grid>
@@ -149,7 +149,7 @@ export default function QuienesSomosComponent() {
                         <br />
                         <br />
                         <br />
-                        Por eso en Pertencer, consideramos que la única forma de fomentar la inclusión es un 
+                        Por eso en Pertenecer, consideramos que la única forma de fomentar la inclusión es un 
                         cambio de actitud y con las certificaciones es cómo podemos incitar un cambio con pequeñas, 
                         pero valiosas acciones que nos unan y logremos un aprendizaje de calidad”.
                     </Typography>
