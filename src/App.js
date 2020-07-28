@@ -7,38 +7,40 @@ import DiscapacidadAuditivaComponent from './components/DiscapacidadAuditiva';
 import DiscapacidadVisualComponent from './components/DiscapacidadVisual';
 import NoticiasComponent from './components/Noticias';
 import ContactoComponent from './components/Contacto';
+import HttpsRedirect from 'react-https-redirect'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Switch>
-        <Route exact path="/">
-          <ToolbarWebPage />
-          <HomeComponent />
-        </Route>
-        <Route path="/quienes-somos">
-          <ToolbarWebPage />
-          <QuienesSomosComponent />
-        </Route>
-        <Route path="/discapacidad-auditiva">
-          <ToolbarWebPage />
-          <DiscapacidadAuditivaComponent />
-        </Route>
-        <Route path="/discapacidad-visual">
-          <ToolbarWebPage />
-          <DiscapacidadVisualComponent />
-        </Route>
-        <Route path="/noticias">
-          <ToolbarWebPage />
-          <NoticiasComponent />
-        </Route>
-        <Route path="/contacto">
-          <ToolbarWebPage />
-          <ContactoComponent />
-        </Route>
-        
-      </Switch>
+        <HttpsRedirect>
+        <Switch>
+          <Route exact path="/">
+            <ToolbarWebPage />
+            <HomeComponent />
+          </Route>
+          <Route path="/quienes-somos">
+            <ToolbarWebPage />
+            <QuienesSomosComponent />
+          </Route>
+          <Route path="/discapacidad-auditiva">
+            <ToolbarWebPage />
+            <DiscapacidadAuditivaComponent />
+          </Route>
+          <Route path="/discapacidad-visual">
+            <ToolbarWebPage />
+            <DiscapacidadVisualComponent />
+          </Route>
+          <Route path="/noticias">
+            <ToolbarWebPage />
+            <NoticiasComponent />
+          </Route>
+          <Route path="/contacto">
+            <ToolbarWebPage />
+            <ContactoComponent />
+          </Route>
+        </Switch>
+      </HttpsRedirect>
     </div>
   );
 }
